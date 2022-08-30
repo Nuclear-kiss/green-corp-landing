@@ -5,6 +5,10 @@ body {
   }
    
   header {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    background: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,8 +46,14 @@ body {
   }
    
   .about__sun-image {
+    top: 0;
     width: 100px;
     height: 100px;
+    animation-name: rotation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    position: absolute.
   }
   .about {
     display: flex;
@@ -144,7 +154,7 @@ body {
     .form__submit{
       font-size: 18px;
       font-weight: 600px;
-      padding-top: 40px;
+      padding: 20px;
     }
 
     select {
@@ -197,3 +207,15 @@ body {
     .footer__links a{
     padding: bottom 15px;
     }
+
+
+    @keyframes rotation{
+      0%{
+        transform: rotate(0deg);
+      }
+    
+      100%{
+        transform: rotate(360deg);
+      }
+
+      /* Планшеты */
